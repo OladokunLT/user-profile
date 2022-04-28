@@ -1,0 +1,17 @@
+.card {
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    border: solid blue 1px;
+    width: 30vw;
+    align-content: center;
+    margin: 2px;
+    padding: 2px;
+
+}
+.d-flex {
+    display: flex;
+    gap: 2px;
+}
+
