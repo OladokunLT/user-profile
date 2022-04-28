@@ -29,32 +29,35 @@ class User extends Component {
 
     return (
       <div className="App">
+      <div className="main-body">
+
         {users.map((user) => (
           <div key={user.id} className="card">
-            <h1 className="font-family"> {user.name} </h1>
-            <p className="decr"> {user.company.catchPhrase} </p>
+            <div className="name"> {user.name} </div>
+            <p className="catchPhrase"> {user.company.catchPhrase} </p>
 
             <h3 className="gen-info"> General Info </h3>
             <div className="d-flex">
-              <div>
+              <div className="info-title">
                 <b>Address</b>
               </div>
               <div> {user.address.street} </div>
             </div>
             <div className="d-flex">
-              <div>
+              <div className="info-title">
                 <b>Email</b>
               </div>
               <div> {user.email} </div>
             </div>
             <div className="d-flex">
-              <div>
+              <div className="info-title">
                 <b>Phone</b>
               </div>
               <div> {user.phone} </div>
             </div>
           </div>
         ))}
+      </div>
       </div>
     );
   }
