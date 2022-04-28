@@ -8,7 +8,7 @@ class User extends Component {
    
         this.state = {
             users: [],
-            DataisLoaded: false
+            getUserInfo: false
         };
     }
    
@@ -16,19 +16,19 @@ class User extends Component {
     componentDidMount() {
         fetch("https://jsonplaceholder.typicode.com/users")
             .then((res) => res.json())
-            .then((json) => {
-                console.log(json)
+            .then((data) => {
+                console.log(data) // this confirmed that data is collected
                 this.setState({
-                    users: json,
-                    DataisLoaded: true
+                    users: data,
+                    getUserInfo: true
                 });
             })
     }
     render() {
-        const { DataisLoaded, users } = this.state;
-        if (!DataisLoaded) return <div>
-            <h1> Problem encountered. May take longer time to connect ... </h1> </div> ;
-   
+        const { getUserInfo, users } = this.state;
+        if (getUserInfo === false) return 
+            <p> Internet connection is require to load your request.</p>;
+        
         return (
         <div className = "App">
             <h1> Fetch data from an api in react </h1>  {
