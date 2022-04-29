@@ -1,3 +1,13 @@
+# KodeCamp: Task 4
+
+Using the ui and API url below, make a dynamic list of users and their profile.
+### API 
+URL: https://jsonplaceholder.typicode.com/users
+
+### UI 
+URL: https://docs.google.com/document/d/1QNFeXfv5UK21Bb3UbwlO2fBaKqUiNNtBa6nigmbLnrY/edit
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

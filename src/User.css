@@ -19,13 +19,14 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
- .d-flex {
+.d-flex {
     display: flex;
     margin-bottom: 10px;
+    font-size: small;
 } 
 .name {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .catchPhrase{
@@ -34,4 +35,10 @@
 
 .info-title {
     width: 75px;
+}
+
+@media (max-width: 768px) {
+    .card {
+     width: 90vw;
+    }     
 }
